@@ -36,7 +36,13 @@ prompting) vs. a fine-tuned BERT-base baseline. Evaluated on SemEval-2014 Task 4
 
 **Fig. 8 — What chain-of-thought changed.** (a) Direct→CoT transitions over the 15 flipped predictions. 7 of the 15 flips go *to* neutral. (b) 3 fixed, 8 broken, 4 wrong either way — net −5 of 200, McNemar exact p = 0.23, not significant. (c) Manual error taxonomy of the flips (below).
 
-**Figs. 9–11, 15 → `figs/confusion_matrices_all.png`.** All confusion matrices (restaurant, laptop, cross-domain transfer, and the Objective-2 implicit/explicit split) are combined into one image instead of four separate files, in run order: Restaurant → Laptop → Cross-domain → Objective 2.
+**Fig. 9 — Confusion matrix, restaurant.** Row-normalised confusion matrices (counts + %) for every restaurant model variant.
+
+**Fig. 10 — Confusion matrix, laptop.** Same, for laptop.
+
+**Fig. 11 — Confusion matrix, cross-domain transfer.** Train on one domain, test on the other, both directions.
+
+**Fig. 15 — Confusion matrix, Objective 2.** Implicit vs. explicit category mentions, plus the Qwen direct/CoT subset comparison.
 
 **Fig. 12 — Reliability / calibration.** Confidence calibration curves + expected calibration error (ECE) per model.
 
@@ -50,7 +56,7 @@ prompting) vs. a fine-tuned BERT-base baseline. Evaluated on SemEval-2014 Task 4
 
 ## Metrics and tables
 
-`cm_restaurant`, `cm_laptop`, `cm_cross_domain`, `cm_objective2` (row-normalised confusion matrices with counts, now combined into one figure — see above); `reliability` (calibration + ECE); `learning_curves_std` (±1 std bands, plus a class-balanced LR line); `per_category_f1`; `results/metrics_table.json` (acc, macro-F1 + 95% bootstrap CI, weighted F1, balanced acc, Cohen's κ, MCC, per-class P/R/F1, ECE); `results/seed_perclass.json` (mean ± std over 5 draws); SemEval-2016 run output in `results/sem16_raw_output.txt`.
+`cm_restaurant`, `cm_laptop`, `cm_cross_domain`, `cm_objective2` (row-normalised confusion matrices with counts — Figs. 9, 10, 11, 15); `reliability` (calibration + ECE); `learning_curves_std` (±1 std bands, plus a class-balanced LR line); `per_category_f1`; `results/metrics_table.json` (acc, macro-F1 + 95% bootstrap CI, weighted F1, balanced acc, Cohen's κ, MCC, per-class P/R/F1, ECE); `results/seed_perclass.json` (mean ± std over 5 draws); SemEval-2016 run output in `results/sem16_raw_output.txt`.
 
 ## Limitations
 
