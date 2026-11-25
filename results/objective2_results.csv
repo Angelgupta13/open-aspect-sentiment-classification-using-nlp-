@@ -1,0 +1,19 @@
+method,group,n,acc,f1
+NLI zero-shot,all,754,0.869,0.744
+NLI zero-shot,word absent (implicit),491,0.847,0.753
+NLI zero-shot,word present,263,0.909,0.669
+"ATSC->ACSC (nli, terms-trained)",all,754,0.893,0.721
+"ATSC->ACSC (nli, terms-trained)",word absent (implicit),491,0.866,0.718
+"ATSC->ACSC (nli, terms-trained)",word present,263,0.943,0.68
+"ATSC->ACSC (both, terms-trained)",all,754,0.891,0.698
+"ATSC->ACSC (both, terms-trained)",word absent (implicit),491,0.864,0.698
+"ATSC->ACSC (both, terms-trained)",word present,263,0.943,0.632
+NLI zero-shot (same 200),all,200,0.875,0.743
+NLI zero-shot (same 200),word absent (implicit),100,0.84,0.753
+NLI zero-shot (same 200),word present,100,0.91,0.622
+LLM direct,all,200,0.92,0.716
+LLM direct,word absent (implicit),100,0.89,0.722
+LLM direct,word present,100,0.95,0.635
+LLM chain-of-thought,all,200,0.895,0.681
+LLM chain-of-thought,word absent (implicit),100,0.87,0.7
+LLM chain-of-thought,word present,100,0.92,0.61

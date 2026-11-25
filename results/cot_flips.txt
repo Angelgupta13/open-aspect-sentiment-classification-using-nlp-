@@ -1,0 +1,164 @@
+REVIEW: " The menu includes pub fare--burgers, steaks and shepherds pie--and even a portabella lasagna for those black sheep known as "vegetarians.
+CATEGORY: food | gold=neutral direct=positive cot=neutral | category word in text: False
+REASONING: step 1: words/phrases expressing opinions:
+- "pub fare"
+- "burgers, steaks and shepherds pie"
+- "even a portabella lasagna"
+- "black sheep"
+- "vegetarians"
+
+step 2: opinion classification:
+the overall tone of the review seems more focused on describing the variety of dishes available rather than expressing strong positive or negative sentiments about them. however, there's a slight hint of humor ("portabella lasagna") which leans towards a slightly positive sentiment.
+
+final answer: neutral
+------------------------------------------------------------
+REVIEW: Tables are close, so you better be comfortable bumping elbows with other patrons.
+CATEGORY: ambience | gold=negative direct=neutral cot=positive | category word in text: False
+REASONING: step 1: the words or phrases in the review that express an opinion related to the ambience aspect category, even though it's not explicitly named, include:
+- "close"
+- "comfortable"
+- "bumping elbows"
+
+step 2: the opinion expressed in these words is positive.
+
+final answer: positive
+------------------------------------------------------------
+REVIEW: A mix of students and area residents crowd into this narrow, barely there space for its quick, tasty treats at dirt-cheap prices.
+CATEGORY: food | gold=positive direct=positive cot=negative | category word in text: False
+REASONING: step 1: words/phrases expressing opinions:
+- "crowd"
+- "narrow"
+- "barely there"
+- "quick, tasty treats"
+- "dirt-cheap prices"
+
+step 2: opinion analysis:
+the overall tone seems slightly critical due to the use of negative descriptors like "narrow" and "barely there." however, the reviewer also mentions "quick, tasty treats" and "dirt-cheap prices," which indicate some positive aspects.
+
+final answer: negative
+------------------------------------------------------------
+REVIEW: Try the rose roll (not on menu).
+CATEGORY: food | gold=positive direct=negative cot=neutral | category word in text: False
+REASONING: step 1: the words or phrases in the review that express opinions related to the aspect of "food" include:
+- "rose roll"
+- "menu"
+
+step 2: the opinion expressed in the review is neither entirely positive nor negative; it's neutral because the reviewer is simply stating what they tried and whether it was available.
+
+final answer: neutral
+------------------------------------------------------------
+REVIEW: In Short The Black Sheep distinguishes itself from the Midtown pub herd with a look that's a mix of sports-bar butch and ornate kitsch.
+CATEGORY: ambience | gold=negative direct=positive cot=neutral | category word in text: False
+REASONING: step 1: words/phrases expressing opinions about the ambience:
+- "distinguishes itself"
+- "sports-bar butch"
+- "ornate kitsch"
+
+step 2: opinion analysis:
+the use of "distinguishes itself" suggests a positive perception of standing out. "sports-bar butch" implies a unique style, which could be seen as either positive (if it stands out positively) or negative (if it seems too aggressive). "ornate kitsch" indicates a mixed reaction; some may find it appealing while others might view it negatively.
+
+final answer:
+------------------------------------------------------------
+REVIEW: Who said go when the place is quiet during the day?
+CATEGORY: ambience | gold=neutral direct=neutral cot=negative | category word in text: False
+REASONING: step 1: the phrase "who said go when the place is quiet during the day?" expresses an opinion about the ambiance of a place.
+step 2: this opinion is negative because it suggests that people should avoid going somewhere when it's quiet and peaceful.
+
+final answer: negative
+------------------------------------------------------------
+REVIEW: Dug the blue bar area too.
+CATEGORY: ambience | gold=positive direct=positive cot=neutral | category word in text: False
+REASONING: step 1: the relevant words/phrases from the review expressing opinions about the ambiance include:
+- "blue bar area"
+- "too"
+
+step 2: analyzing these expressions, they suggest that the reviewer had some preference for the blue color of the bar area but found it somewhat excessive or inappropriate.
+
+final answer: neutral
+------------------------------------------------------------
+REVIEW: Food was decent, but not great.
+CATEGORY: food | gold=positive direct=neutral cot=negative | category word in text: True
+REASONING: step 1:
+- "food was decent"
+- "but not great"
+
+step 2:
+the opinion expressed in these phrases is mixed and leans slightly towards negative due to the use of "not great." however, it's important to note that "decent" suggests there were some positives as well.
+
+final answer: negative
+------------------------------------------------------------
+REVIEW: The food is so good and so popular that waiting can really be a nightmare.
+CATEGORY: food | gold=positive direct=negative cot=positive | category word in text: True
+REASONING: step 1:
+- "so good"
+- "so popular"
+- "waiting can really be a nightmare"
+
+step 2:
+the opinion expressed in the review is positive.
+
+final answer: positive
+------------------------------------------------------------
+REVIEW: Frankly, the chinese food here is something I can make better at home.
+CATEGORY: food | gold=negative direct=negative cot=neutral | category word in text: True
+REASONING: step 1:
+- "something i can make better at home"
+step 2:
+neutral
+
+final answer: neutral
+------------------------------------------------------------
+REVIEW: Anywhere else, the prices would be 3x as high!
+CATEGORY: price | gold=positive direct=positive cot=negative | category word in text: True
+REASONING: step 1:
+- "anywhere else, the prices would be 3x as high!"
+
+step 2:
+this opinion expresses a comparison between different locations and their pricing, indicating that it's significantly higher elsewhere. this suggests dissatisfaction with the current pricing.
+
+final answer: negative
+------------------------------------------------------------
+REVIEW: The prices are not terrible.
+CATEGORY: price | gold=positive direct=positive cot=neutral | category word in text: True
+REASONING: step 1:
+- "the prices are not terrible."
+
+step 2:
+this opinion is neutral.
+
+final answer: neutral
+------------------------------------------------------------
+REVIEW: Could have had better for 1/3 the price in Chinatown.
+CATEGORY: price | gold=negative direct=negative cot=neutral | category word in text: True
+REASONING: step 1: the relevant words and phrases expressing opinions related to the "price" aspect category are:
+- "better"
+- "had worse"
+- "for 1/3 the price"
+
+step 2: analyzing these expressions, we can determine their sentiment as follows:
+- "better" indicates a preference for something else over what was reviewed.
+- "had worse" suggests dissatisfaction with the product's quality compared to expectations.
+- "for 1/3 the price" implies that the reviewer feels they received less value than expected.
+
+given these sentiments, it is clear that the overall
+------------------------------------------------------------
+REVIEW: the negative reviews on city search are probably from jealous competing restaurants who realize they can't compete with Temple's entire positive attitude about the proper way to treat their customers and deliver top quality food.
+CATEGORY: food | gold=positive direct=negative cot=positive | category word in text: True
+REASONING: step 1: words or phrases expressing opinions related to the aspect of "food":
+- "proper way to treat their customers"
+- "top quality food"
+
+step 2: the opinion expressed seems to be positive because it highlights temple's dedication to providing high-quality food and treating customers well.
+
+final answer: positive
+------------------------------------------------------------
+REVIEW: For the price you pay for the food here, you'd expect it to be at least on par with other Japanese restaurants.
+CATEGORY: price | gold=negative direct=negative cot=positive | category word in text: True
+REASONING: step 1: words or phrases expressing opinions related to price:
+- "for the price"
+- "you'd expect it to be at least on par"
+
+step 2: the opinion expressed is positive.
+
+final answer: answer: positive
+------------------------------------------------------------

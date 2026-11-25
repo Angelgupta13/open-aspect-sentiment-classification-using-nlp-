@@ -1,0 +1,56 @@
+R16_tr 1880 pos/neg/neu = [1319  489   72]
+R16_te 650 pos/neg/neu = [483 135  32]
+RC16_tr 2507 pos/neg/neu = [1657  749  101]
+RC16_te 859 pos/neg/neu = [611 204  44]
+LC16_tr 2909 pos/neg/neu = [1637 1084  188]
+LC16_te 801 pos/neg/neu = [481 274  46]
+
+=== SemEval-2016 ZERO-SHOT ===
+      method             setting  n   acc    f1
+  prompt-nli  R16_te (zero-shot)  0 0.892 0.739
+prompt-cloze  R16_te (zero-shot)  0 0.817 0.547
+ prompt-both  R16_te (zero-shot)  0 0.888 0.723
+  prompt-nli RC16_te (zero-shot)  0 0.820 0.674
+prompt-cloze RC16_te (zero-shot)  0 0.823 0.572
+ prompt-both RC16_te (zero-shot)  0 0.867 0.709
+  prompt-nli LC16_te (zero-shot)  0 0.727 0.597
+prompt-cloze LC16_te (zero-shot)  0 0.673 0.495
+ prompt-both LC16_te (zero-shot)  0 0.775 0.603
+
+=== SemEval-2016 IN-DOMAIN / CROSS-DATASET (macro-F1) ===
+setting            F2014R->F2016R  F2016R->F2014R  LC16->LC16  R14->R16_te  R14->R_te  R16->R16  R16->R16_te  R16->R_te  RC16->RC16
+method       n
+bert-head    256              NaN             NaN         NaN        0.555      0.590       NaN        0.537      0.508         NaN
+             1880             NaN             NaN         NaN          NaN        NaN       NaN        0.565      0.528         NaN
+             3602             NaN             NaN         NaN        0.614      0.752       NaN          NaN        NaN         NaN
+prompt-both  16               NaN             NaN       0.540          NaN        NaN     0.663          NaN        NaN       0.627
+             64             0.652           0.604       0.600          NaN        NaN     0.711          NaN        NaN       0.678
+             256            0.707           0.582       0.598          NaN        NaN     0.698          NaN        NaN       0.683
+             1024             NaN             NaN       0.606          NaN        NaN     0.718          NaN        NaN       0.650
+             1880             NaN           0.578         NaN          NaN        NaN     0.734          NaN        NaN         NaN
+             2507             NaN             NaN         NaN          NaN        NaN       NaN          NaN        NaN       0.664
+             2909             NaN             NaN       0.610          NaN        NaN       NaN          NaN        NaN         NaN
+             3602           0.690             NaN         NaN          NaN        NaN       NaN          NaN        NaN         NaN
+prompt-cloze 16               NaN             NaN       0.480          NaN        NaN     0.577          NaN        NaN       0.567
+             64             0.582           0.530       0.546          NaN        NaN     0.571          NaN        NaN       0.592
+             256            0.634           0.530       0.555          NaN        NaN     0.573          NaN        NaN       0.573
+             1024             NaN             NaN       0.558          NaN        NaN     0.573          NaN        NaN       0.572
+             1880             NaN           0.530         NaN          NaN        NaN     0.571          NaN        NaN         NaN
+             2507             NaN             NaN         NaN          NaN        NaN       NaN          NaN        NaN       0.573
+             2909             NaN             NaN       0.554          NaN        NaN       NaN          NaN        NaN         NaN
+             3602           0.641             NaN         NaN          NaN        NaN       NaN          NaN        NaN         NaN
+prompt-nli   16               NaN             NaN       0.539          NaN        NaN     0.671          NaN        NaN       0.619
+             64             0.662           0.588       0.592          NaN        NaN     0.694          NaN        NaN       0.677
+             256            0.692           0.567       0.593          NaN        NaN     0.682          NaN        NaN       0.657
+             1024             NaN             NaN       0.591          NaN        NaN     0.697          NaN        NaN       0.641
+             1880             NaN           0.569         NaN          NaN        NaN     0.700          NaN        NaN         NaN
+             2507             NaN             NaN         NaN          NaN        NaN       NaN          NaN        NaN       0.639
+             2909             NaN             NaN       0.590          NaN        NaN       NaN          NaN        NaN         NaN
+             3602           0.650             NaN         NaN          NaN        NaN       NaN          NaN        NaN         NaN
+
+Notes:
+- "R16" = restaurant 2016, explicit-target (term-level) subset, 1880 train / 650 test opinions
+- "RC16" = restaurant 2016, category-level (all opinions incl. implicit targets), 2507 train / 859 test
+- "LC16" = laptop 2016, category-level ONLY (laptop domain has 0% explicit targets in SemEval-2016), 2909 train / 801 test
+- "R" / "R_te" (no 16) = SemEval-2014 restaurant, from the original pipeline cell
+- bert-head "R16->R16_te" / "R16->R_te" rows at n=1880/3602 = full-training-set BERT runs (n label shows full row count, not a subsample)
